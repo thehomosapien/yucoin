@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=YUCcoin
+Comment=YUCcoin P2P Cryptocurrency
+Exec=yucoin-qt %u
+Terminal=false
+Type=Application
+Icon=yucoin128
+MimeType=x-scheme-handler/yucoin;
+Categories=Office;Finance;
+Name[en_US]=yucoin-qt.desktop

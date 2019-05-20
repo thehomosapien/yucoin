@@ -1,0 +1,11 @@
+[Protocol]
+exec=yucoin-qt '%u'
+protocol=yucoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

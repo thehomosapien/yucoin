@@ -1,0 +1,26 @@
+# /etc/conf.d/yucoind: config file for /etc/init.d/yucoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/yucoin/yucoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/yucoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/yucoind.pid"
+
+# Where to write yucoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/yucoind"
+
+# User and group to own yucoind process
+#BITCOIND_USER="yucoin"
+#BITCOIND_GROUP="yucoin"
+
+# Path to yucoind executable
+#BITCOIND_BIN="/usr/bin/yucoind"
+
+# Nice value to run yucoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,26 @@
+[Unit]
+Description=YUCOIN's distributed currency daemon
+After=network.target
+
+[Service]
+User=yucoin
+Group=yucoin
+
+Type=forking
+PIDFile=/var/lib/yucoind/yucoind.pid
+
+ExecStart=/usr/bin/yucoind -daemon -pid=/var/lib/yucoind/yucoind.pid \
+          -conf=/etc/yucoin/yucoin.conf -datadir=/var/lib/yucoind
+
+ExecStop=-/usr/bin/yucoin-cli -conf=/etc/yucoin/yucoin.conf \
+         -datadir=/var/lib/yucoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
